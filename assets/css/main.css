@@ -53,7 +53,7 @@
 }
 
 .accent-background {
-  --background-color: #2487ce;
+  --background-color: #515d6a;
   --default-color: #ffffff;
   --heading-color: #ffffff;
   --accent-color: #ffffff;
@@ -1026,36 +1026,30 @@ section,
 /*--------------------------------------------------------------
 # About Alt Section
 --------------------------------------------------------------*/
-.about-alt .content h3 {
+.about .content h3 {
   font-size: 1.75rem;
   font-weight: 700;
 }
 
-.about-alt .content ul {
+.about .content ul {
   list-style: none;
   padding: 0;
 }
 
-.about-alt .content ul li {
+.about .content ul li {
   padding: 10px 0 0 0;
   display: flex;
 }
 
-.about-alt .content ul i {
+.about .content ul i {
   color: var(--accent-color);
   margin-right: 0.5rem;
   line-height: 1.2;
   font-size: 1.25rem;
 }
 
-.about-alt .content p:last-child {
+.about .content p:last-child {
   margin-bottom: 0;
-}
-
-.about-alt .pulsating-play-btn {
-  position: absolute;
-  left: calc(50% - 47px);
-  top: calc(50% - 47px);
 }
 
 /*--------------------------------------------------------------
