@@ -1141,6 +1141,11 @@ section,
   transform: scale(-1, -1);
 }
 
+.testimonials .testimonial-item .testimonial-company-name{
+  color: var(--accent-color);
+  text-transform: uppercase;
+}
+
 .testimonials .testimonial-item p {
   font-style: italic;
   margin: 0 15px 0 15px;
@@ -1438,6 +1443,11 @@ section,
 .portfolio .portfolio-item:hover .portfolio-info {
   opacity: 1;
   bottom: 0;
+}
+
+.portfolio .portfolio-item .img-fluid{
+  height: 12rem;
+  width: 100%;
 }
 
 /*--------------------------------------------------------------

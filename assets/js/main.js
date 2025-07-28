@@ -246,7 +246,7 @@
 // For Team
 window.onload = function () {
   const teamHeading = document.getElementById("teamheading");
-    window.location.pathname.endsWith("team.html");
+  window.location.pathname.endsWith("team.html");
   if (teamheading) {
     teamheading.style.display = "none";
   }
@@ -269,6 +269,10 @@ window.onload = function () {
 };
 
 // For navbar menu active
- const links = document.querySelectorAll('#navmenu a');
-  const page = location.pathname.split("/").pop() || "index.html";
-  links.forEach(link => link.classList.toggle('active', link.getAttribute('href') === page));
+const links = document.querySelectorAll("#navmenu a");
+const page = location.pathname.split("/").pop() || "index.html";
+links.forEach((link) =>
+  link.classList.toggle("active", link.getAttribute("href") === page)
+);
+
+// For PortFolio
