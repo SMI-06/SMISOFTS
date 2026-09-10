@@ -275,4 +275,34 @@ links.forEach((link) =>
   link.classList.toggle("active", link.getAttribute("href") === page)
 );
 
-// For PortFolio
+// For about us button
+document.getElementById("readMoreBtn").style.display =
+  window.location.href.includes("index.html") ? "inline-block" : "none";
+
+// For about us page heading
+document.getElementById("subhead").style.display =
+  window.location.href.includes("index.html") ? "block" : "none";
+
+const headingText = document.getElementById("heading-text");
+if (window.location.href.includes("about-us.html")) {
+  headingText.textContent = "Your Partner for Smarter Success";
+  // headingDesc.textContent = "Our expert team delivers software, IT, and digital marketing solutions to help your business grow efficiently.";
+}
+
+
+// 3d effect
+const img = document.querySelector(".img-3d");
+
+img.addEventListener("mousemove", (e) => {
+  const { width, height, left, top } = img.getBoundingClientRect();
+  const x = e.clientX - left;
+  const y = e.clientY - top;
+  const rotateX = ((y / height) - 0.5) * 20; // tilt up/down
+  const rotateY = ((x / width) - 0.5) * 20;  // tilt left/right
+
+  img.style.transform = `rotateX(${-rotateX}deg) rotateY(${rotateY}deg) scale(1.05)`;
+});
+
+img.addEventListener("mouseleave", () => {
+  img.style.transform = "rotateX(0) rotateY(0) scale(1)";
+});

@@ -2045,6 +2045,42 @@ section,
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
+.anibg {
+  position: relative;
+  overflow: hidden;
+  padding: 50px;
+  border-radius: 20px;
+  background: #ffffff;
 }
+
+.anibg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  background-image: repeating-linear-gradient(
+    45deg,
+    rgba(217, 35, 45, 0.1) 0,
+    rgba(217, 35, 45, 0.1) 2px,
+    transparent 2px,
+    transparent 12px
+  );
+  animation: slideLines 10s linear infinite;
+  z-index: 0;
+}
+
+.row.position-relative {
+  position: relative;
+  z-index: 1;
+}
+
+@keyframes slideLines {
+  0% { transform: translate(0,0); }
+  50% { transform: translate(50px,50px); }
+  100% { transform: translate(0,0); }
+}
+
+
+
